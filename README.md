@@ -31,8 +31,11 @@ props: {
 ```
 > 注意返回结果如（北京，四川）不包含（省和市字样）
 
-# 运行
+# 安装依赖及运行
 
-``` Bash
+``` bash
+  npm install
+```
+``` bash
   npm run dev
 ```
