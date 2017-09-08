@@ -1,4 +1,4 @@
-# address-cascader
+# vue-address-cascader
 
 > 基于vue 2.x的地址级联选择组件，已经包含了地址基础数据
 
