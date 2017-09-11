@@ -1,6 +1,6 @@
 # vue-address-cascader
 
-> 基于vue 2.x的地址级联选择组件，已经包含了地址基础数据
+> 基于vue 2.x的省市区级联选择组件，已经包含了地址基础数据（截止2016年7月31日）
 
 # 立即使用
 > 引入src/components/address-cascader
