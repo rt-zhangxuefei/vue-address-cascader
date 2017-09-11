@@ -86,7 +86,7 @@ export default {
             })
             ret || (this.currCity = this.cities[0].name)
           } else {
-            this.currCity = ''
+            this.currCity = '请选择'
             this.cities = []
           }
           return true
@@ -103,7 +103,7 @@ export default {
             })
             ret || (this.currArea = this.areas[0].name)
           } else {
-            this.currArea = ''
+            this.currArea = '请选择'
             this.areas = []
           }
           return true
