@@ -1,6 +1,7 @@
 # vue-address-cascader
 
-> 基于vue 2.x的省市区级联选择组件，已经包含了地址基础数据
+> 基于vue 2.x的省市区级联选择组件，已经包含了最新全国省市区基础数据<http://www.stats.gov.cn/tjsj/tjbz/xzqhdm/201703/t20170310_1471429.html>
+genData.js是个node程序，把国标的文本数据生成json格式，方便在程序里面引入使用
 
 # 立即使用
 > 引入src/components/address-cascader
@@ -29,7 +30,7 @@ props: {
 ```
 {province,city,area}
 ```
-> 注意返回结果如（北京，四川）不包含（省和市字样）
+> 注意返回结果如（北京，四川）不包含（省和市字样），如果你希望返回，可以修改genData里面的genData.js，这是个node程序，用来生产基础数据的json文件
 
 # 安装依赖及运行
 
