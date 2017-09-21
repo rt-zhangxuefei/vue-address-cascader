@@ -61,7 +61,8 @@ export const REGIONS = [
       {
         'name': '延庆区'
       }
-    ]
+    ],
+    'isMunicipality': 1
   },
   {
     'name': '天津',
@@ -117,7 +118,8 @@ export const REGIONS = [
       {
         'name': '蓟州区'
       }
-    ]
+    ],
+    'isMunicipality': 1
   },
   {
     'name': '河北',
@@ -2832,7 +2834,8 @@ export const REGIONS = [
       {
         'name': '崇明区'
       }
-    ]
+    ],
+    'isMunicipality': 1
   },
   {
     'name': '江苏',
@@ -8119,7 +8122,8 @@ export const REGIONS = [
       {
         'name': '彭水苗族土家族自治县'
       }
-    ]
+    ],
+    'isMunicipality': 1
   },
   {
     'name': '四川',
@@ -11538,6 +11542,33 @@ export const REGIONS = [
             'name': '铁门关市'
           }
         ]
+      }
+    ]
+  },
+  {
+    'name': '台湾',
+    'sub': [
+      {
+        'name': '请选择',
+        'sub': []
+      }
+    ]
+  },
+  {
+    'name': '香港',
+    'sub': [
+      {
+        'name': '请选择',
+        'sub': []
+      }
+    ]
+  },
+  {
+    'name': '澳门',
+    'sub': [
+      {
+        'name': '请选择',
+        'sub': []
       }
     ]
   }

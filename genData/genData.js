@@ -17,7 +17,7 @@ fs.readFile(path.join(__dirname, 'data-20160731.txt'), 'utf-8', (err, data) => {
     kv.forEach((item, index) => {
       if (item.id.substring(2) === '0000') {
         if (kv[index + 1] && kv[index + 1].id.substring(4) === '00' && kv[index + 1].name === '市辖区') {
-          ret.push({ name: trimEnd(item.name), sub: [{ name: '请选择' }] })
+          ret.push({ name: trimEnd(item.name), sub: [{ name: '请选择' }], isMunicipality: 1 })
           flag = true
         } else {
           ret.push({ name: trimEnd(item.name), sub: [{ name: '请选择', sub: [] }] })
