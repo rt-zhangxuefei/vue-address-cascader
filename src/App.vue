@@ -20,8 +20,11 @@ export default {
   computed: {
     dataString() {
       let ret = ''
-      this.data.province && (ret += this.data.province)
+      this.data.province && (ret += this.data.province.name)
       this.data.city && (ret += '-' + this.data.city)
+      if (this.data.province.isMunicipality) {
+        return ret
+      }
       this.data.area && (ret += '-' + this.data.area)
 
       return ret

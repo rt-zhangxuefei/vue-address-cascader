@@ -15,6 +15,7 @@
 import { REGIONS } from './regions'
 
 const REGION_NAME = '请选择'
+const Municipalities = ['北京', '上海', '天津', '重庆']
 
 export default {
   name: 'address-cascader',
@@ -115,7 +116,14 @@ export default {
       this._emitChoosed()
     },
     _emitChoosed() {
-      this.$emit('choosed', { province: this.currProvince, city: this.currCity, area: this.currArea })
+      this.$emit('choosed', { province: this._isMunicipality(this.currProvince), city: this.currCity, area: this.currArea })
+    },
+    _isMunicipality(province) {
+      if (Municipalities.indexOf(province) > -1) {
+        return { name: province, isMunicipality: true }
+      } else {
+        return { name: province, isMunicipality: false }
+      }
     }
   }
 }
